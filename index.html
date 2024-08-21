@@ -1,0 +1,38 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Inc</title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/icon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body onload="initGame()">
+    <audio  id="audio"  src="./assets/audio/monsterInc.mp3"></audio> 
+    <audio id="gameOverAudio"  src="./assets/audio/gameOverAudio.mp3"></audio> 
+    <div class="background">
+
+        <div id="cont-general">
+            <h1 id="title">Monster Inc Game</h1>
+            <div id="puntos">
+                <div>Lives: <span id="Lives"></span> </div>
+                <div>Score: <span id="Score"></span></div>
+            </div>
+            <div id="board">
+                <div id="villain"></div>
+                <div id="hero"></div>
+            </div>
+            <div id="modal">
+                <div>
+                    <h1>GAME OVER!!!</h1>
+                    <a href="javascript:refresh();">Jugar de nuevo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
